@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tela de Login Pet</title>
+
+<!-- Ícones -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#ececec;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.container{
+    width:1200px;
+    height:700px;
+    background:white;
+    display:grid;
+    grid-template-columns:1fr 1.3fr;
+    overflow:hidden;
+}
+
+/* Lado esquerdo */
+
+.left{
+    position:relative;
+    overflow:hidden;
+}
+
+.left img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    filter:grayscale(100%);
+}
+
+.left h1{
+    position:absolute;
+    top:60px;
+    width:100%;
+    text-align:center;
+    font-size:60px;
+    font-weight:bold;
+}
+
+/* Lado direito */
+
+.right{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    padding:60px;
+}
+
+.right h2{
+    font-size:56px;
+    text-align:center;
+    margin-bottom:70px;
+    line-height:1.15;
+}
+
+.social-btn{
+    width:420px;
+    height:60px;
+    border:2px solid #555;
+    border-radius:40px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:18px;
+    margin-bottom:20px;
+    background:white;
+    cursor:pointer;
+    transition:.3s;
+    font-size:28px;
+}
+
+.social-btn:hover{
+    background:#f5f5f5;
+}
+
+.social-btn img{
+    width:30px;
+}
+
+.google{
+    color:#EA4335;
+}
+
+.apple{
+    color:#000;
+}
+
+.mail{
+    color:#000;
+}
+
+.info{
+    margin-top:5px;
+    font-size:18px;
+}
+
+.info a{
+    color:#245eff;
+    text-decoration:none;
+}
+
+.info a:hover{
+    text-decoration:underline;
+}
+
+.start{
+    margin-top:120px;
+    width:420px;
+    height:70px;
+    border:none;
+    border-radius:40px;
+    background:#1f1f1f;
+    color:;
+    font-size:26px;
+    cursor:pointer;
+    transition:.3s;
+  <img src="pug.png" alt="">s 
+}
+
+.start:hover{
+    background:#000;
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+    <div class="left">
+        <h1>Bem-Vindo</h1>
+
+        <!-- Troque pela imagem do cachorro -->
+        <img src="pug.png" alt="">
+    </div>
+
+    <div class="right">
+
+        <h2>
+            Encontre tudo o que você precisa
+            para seu animal de estimação
+        </h2>
+
+        <button class="social-btn">
+            <i class="fab fa-google google fa-lg"></i>
+            Entrar com Google
+        </button>
+
+        <button class="social-btn">
+            <i class="fab fa-apple apple fa-lg"></i>
+            Entrar com Apple
+        </button>
+
+        <button class="social-btn">
+            <i class="fas fa-envelope mail"></i>
+            Entrar com E-mail
+        </button>
+
+        <div class="info">
+            Você quer tentar de outra maneira?
+            <a href="#">Saber mais</a>
+        </div>
+
+        <button class="start">
+            Vamos lá
+        </button>
+
+    </div>
+
+</div>
+
+</body>
+</html>
